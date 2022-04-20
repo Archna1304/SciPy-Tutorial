@@ -24,19 +24,54 @@ Let’s get started by installing SciPy on your Machine.
 
 Installing SciPy
 Before learning more about the core functionality of SciPy, it should be installed in the system.
+
 Install on Windows and Linux
 Here are a few methods that can be used to install SciPy on Windows or Linux.
+
 Install SciPy using pip
 We can install the SciPy library by using the pip command. Pip is basically a recursive acronym which stands for ‘Pip Installs Packages’. It is a standard package manager which can be installed in most of the operating systems. To install, run the following command in the terminal:
+
 pip install scipy
+
 Note: Use pip to install SciPy in Linux.
+
 Install SciPy using Anaconda
 We can also install SciPy packages by using Anaconda. First, we need to download the Anaconda navigator and then open the anaconda prompt type the following command:
+
 conda install -c anaconda scipy
+
 Install on Mac
 The mac doesn’t have the preinstall package manager, but you can install various popular package managers. Run the following commands in the terminal it will download the SciPy as well as matplotlib, pandas, NumPy.
+
 sudo port install py35-numpy py35-scipy py35-matplotlib py35-ipython +notebook py35-pandas py35-sympy py35-nose
+
 Also, you can use Homebrew to install these packages. But keep in mind that it has incomplete coverage of the SciPy ecosystem:
+
 brew install numpy scipy ipython jupyter
+
+Let’s take a closer look at some of the SciPy functions.
+
+Basic functions
+
+![image](https://user-images.githubusercontent.com/89066734/164201860-31055495-22bd-470c-9444-a48394cf5c7b.png)
+
+help( )
+
+from scipy import cluster
+help(cluster)     #with parameter
+help()            #without parameter
+
+When you execute the above code, the first help() returns the information about the cluster submodule. The second help() asks the user to enter the name of any module, keyword, etc for which the user desires to seek information. To stop the execution of this function, simply type ‘quit’ and hit enter.
+
+info( )
+
+import scipy 
+scipy.info(cluster)
+
+Source( )
+
+scipy.source(cluster)
+
+Special functions (scipy.special)
 
 
